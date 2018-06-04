@@ -9,7 +9,11 @@ public class IfStatement{
 		System.out.println("Please enter your Roll number : ");
 		int rollNumber = input.nextInt();
 
-		if(rollNumber<10)
+		if(rollNumber<=0)
+			{
+			System.out.println("Roll number cannot be 0 or negative. Please try again.");
+			}
+		else if(rollNumber<10)
 	    		{
     			System.out.println("Proceed to Class number 6.");
  	   		}
